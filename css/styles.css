@@ -1,0 +1,27 @@
+* {
+	font-family: Helvetica;
+}
+
+.clock {
+	font-size: 10em;
+	font-weight: 500;
+	text-align: center;
+}
+
+#greeting {
+	text-align: center;
+}
+
+.name {
+	font-size: 3em;
+	text-align: center;
+}
+
+.close {
+	display: none;
+}
+
+.showGreeting {
+	font-size: 3em;
+	text-align: center;
+}
