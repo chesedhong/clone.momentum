@@ -2,18 +2,55 @@
 	font-family: Helvetica;
 }
 
+body {
+	position: absolute;
+    width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.bgImage {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	animation: fadeIn .5s linear;
+}
+
+#main {
+	position:absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+
 .clock {
-	font-size: 10em;
+	font-size: 8em;
 	font-weight: 500;
 	text-align: center;
+	color: white;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	
 }
 
 #greeting {
 	text-align: center;
+	color: white;
+	text-shadow: 0 1px 5px rgba(0,0,0,.1);
+	
 }
 
 .name {
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -24,4 +61,11 @@
 .showGreeting {
 	font-size: 3em;
 	text-align: center;
+}
+
+#navbar {
+	color: white;
+	font-size: 1.5em;
+	text-align: right;
+	margin: 20px;
 }
